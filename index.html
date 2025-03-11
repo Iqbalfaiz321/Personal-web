@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header
@@ -71,9 +73,9 @@
     >
       <div class="flex flex-col md:flex-row items-center rounded-lg justify-center gap-10">
         <!-- Text Content -->
-        <div class="max-w-lg text-center md:text-left">
+        <div class="max-w-lg text-center md:text-left" data-aos="fade-right">
           <h1 class="text-3xl font-bold">I'm a <span class="text-blue-400">Web Developer</span> </h1>
-          <p class="mt-4 text-lg text-gray-600">
+          <p class="mt-4 text-lg text-gray-600" >
             I am a dedicated web developer with a passion for creating beautiful and functional web applications. Let's build amazing things together!
           </p>
            <!-- medsos link -->
@@ -118,7 +120,8 @@
     </section>
 
     <!-- Galeri about -->
-    <section id="about" class="py-16 px-6 md:px-10 bg-gray-100">
+    <section id="about" class="py-16 px-6 md:px-10 bg-gray-100" data-aos="fade-up"
+    data-aos-duration="3000">
       <div
         class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center gap-12"
       >
@@ -161,7 +164,7 @@
         <!-- Tools Grid -->
         <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
           <!-- Tool 1 -->
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center" data-aos="zoom-in-up">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
               alt="HTML5"
@@ -171,7 +174,7 @@
           </div>
 
           <!-- Tool 2 -->
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center" data-aos="zoom-in-up">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
               alt="CSS3"
@@ -181,7 +184,7 @@
           </div>
 
           <!-- Tool 3 -->
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center" data-aos="zoom-in-up">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt="JavaScript"
@@ -191,7 +194,7 @@
           </div>
 
           <!-- Tool 4 -->
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center" data-aos="zoom-in-up">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="React"
@@ -214,7 +217,7 @@
         <!-- Project Gallery Grid -->
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
           <!-- Project 1 -->
-          <div class="relative group">
+          <div class="relative group" data-aos="fade-right">
             <img
               src="src/project1.png"
               alt="Project 1"
@@ -228,7 +231,7 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="relative group">
+          <div class="relative group" data-aos="fade-left">
             <img
               src="src/project2.png"
               alt="Project 2"
@@ -331,7 +334,10 @@
         <!-- Social Media Icons -->
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       // Menampilkan tahun secara dinamis
       document.getElementById("year").textContent = new Date().getFullYear();
